@@ -33,7 +33,21 @@ Tonja Fitting
 April Fronk  
 Marylouise Haake
 
-Now add a few more names using the add method. Remove the name at [4]. Then remove "Karen Withrow" without using the index.
+Let's loop through the names to make sure they all got added correct:
+
+    System.out.println("----After Inital Add----");
+    for(String student : students) {
+      System.out.println(student);
+    }
+    
+When you run this, you should see all 5 names.
+
+Now add a few more names using the add method. Remove the name at [4]. Then remove "Karen Withrow" without using the index.  Check to see if the removals happened like you expected.
+
+    System.out.println("----After more adding removal----");
+    for(String student : students) {
+      System.out.println(student);
+    }
 
 ### HashMaps
 #### Why HashMaps?
@@ -48,15 +62,28 @@ Notice that the type of each element needs to be defined when you create the Has
 
 Some common useful methods on HashMaps are:
 1. boolean students.put(1, "Temika Berthiaume")
-1. <value's type> students.get(key) so in this case: students.get(1)
-1. <value> students.remove(key)
-1. <old value> students.replace(key, newValue)
-1. boolean students.containsKey(key)
-1. boolean students.containsValue(value)
-1. int students.size();
+2. <value's type> students.get(key) so in this case: students.get(1)
+3. <value> students.remove(key)
+4. <old value> students.replace(key, newValue)
+5. boolean students.containsKey(key)
+6. boolean students.containsValue(value)
+7. int students.size();
 
 #### HashMaps Practice
 Create a HashMap of your students, each with an incrementing ID number.
+Let's loop through your HashMap and output the student names. This is a bit more complicated.
+
+    System.out.println("----Student HashMap----");
+    for (String student : studentMap.values()) {
+      System.out.println(student);
+    }
+
+Java also supports a lot of the higher order functions you are used to but you won't see them as widely used as the format above.
+
+    System.out.println("----Student HashMap (foreach)----");
+    studentMap.values().forEach(student -> {
+      System.out.println(student);
+    });
 
 ### Classes
 ### Why classes?
