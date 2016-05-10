@@ -18,6 +18,7 @@ Just like arrays, arrayLists can hold one type. They are written like so:
 Some common methods are:
 
 1. boolean strings.add("new string");
+1. &lt;Type&gt; strings.get(index);
 1. void strings.clear();
 1. boolean strings.remove(index OR "new string")
 1. boolean strings.contains("new string");
@@ -63,12 +64,14 @@ Notice that the type of each element needs to be defined when you create the Has
 Some common useful methods on HashMaps are:
 
 1. boolean students.put(1, "Temika Berthiaume")
-1. <value's type> students.get(key) so in this case: students.get(1)
-1. <value> students.remove(key)
-1. <old value> students.replace(key, newValue)
+1. &lt;Value's type&gt; [value] students.get(key) so in this case: students.get(1)
+1. &ltValue's type&gt; [removed value] students.remove(key)
+1. &lt;Value's type&gt; [old value] students.replace(key, newValue)
 1. boolean students.containsKey(key)
 1. boolean students.containsValue(value)
 1. int students.size();
+2. 1. Set&lt;Value's type&gt; strings.values();
+1. Set&lt;Key's type&gt; string.keySet();
 
 #### HashMaps Practice
 Create a HashMap of your students, each with an incrementing ID number.
