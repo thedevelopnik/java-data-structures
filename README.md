@@ -16,6 +16,7 @@ Just like arrays, arrayLists can hold one type. They are written like so:
     ArrayList<String> strings = new ArrayList<>();
 
 Some common methods are:
+
 1. boolean strings.add("new string");
 1. void strings.clear();
 1. boolean strings.remove(index OR "new string")
