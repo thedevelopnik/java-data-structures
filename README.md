@@ -2,8 +2,11 @@
 ## ArrayLists, HashMaps, Classes
 
 ### Objective
+
 Know: Java data structures
+
 Show: An ArrayList of a custom class
+
 Level of Thinking: Comprehension
 
 ### ArrayLists
