@@ -65,7 +65,7 @@ Some common useful methods on HashMaps are:
 
 1. boolean students.put(1, "Temika Berthiaume")
 1. &lt;Value's type&gt; [value] students.get(key) so in this case: students.get(1)
-1. &ltValue's type&gt; [removed value] students.remove(key)
+1. &lt;Value's type&gt; [removed value] students.remove(key)
 1. &lt;Value's type&gt; [old value] students.replace(key, newValue)
 1. boolean students.containsKey(key)
 1. boolean students.containsValue(value)
