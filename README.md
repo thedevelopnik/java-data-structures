@@ -61,13 +61,14 @@ HashMaps are created like this:
 Notice that the type of each element needs to be defined when you create the HashMap. The HashMap above will only hold pairs of Integers and Strings. However, you could make a new HashMap<Boolean, Integer> or HashMap<String, String>. The sky is the limit, as we shall see soon!
 
 Some common useful methods on HashMaps are:
+
 1. boolean students.put(1, "Temika Berthiaume")
-2. <value's type> students.get(key) so in this case: students.get(1)
-3. <value> students.remove(key)
-4. <old value> students.replace(key, newValue)
-5. boolean students.containsKey(key)
-6. boolean students.containsValue(value)
-7. int students.size();
+1. <value's type> students.get(key) so in this case: students.get(1)
+1. <value> students.remove(key)
+1. <old value> students.replace(key, newValue)
+1. boolean students.containsKey(key)
+1. boolean students.containsValue(value)
+1. int students.size();
 
 #### HashMaps Practice
 Create a HashMap of your students, each with an incrementing ID number.
