@@ -44,7 +44,7 @@ When you run this, you should see all 5 names.
 
 Now add a few more names using the add method. Remove the name at [4]. Then remove "Karen Withrow" without using the index.  Check to see if the removals happened like you expected.
 
-    System.out.println("----After more adding removal----");
+    System.out.println("----After more adding and some removal----");
     for(String student : students) {
       System.out.println(student);
     }
