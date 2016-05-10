@@ -2,8 +2,11 @@
 ## ArrayLists, HashMaps, Classes
 
 ### Objective
+
 Know: Java data structures
+
 Show: An ArrayList of a custom class
+
 Level of Thinking: Comprehension
 
 ### ArrayLists
@@ -18,6 +21,7 @@ Just like arrays, arrayLists can hold one type. They are written like so:
 Some common methods are:
 
 1. boolean strings.add("new string");
+1. &lt;Type&gt; strings.get(index);
 1. void strings.clear();
 1. boolean strings.remove(index OR "new string")
 1. boolean strings.contains("new string");
@@ -33,7 +37,21 @@ Tonja Fitting
 April Fronk  
 Marylouise Haake
 
-Now add a few more names using the add method. Remove the name at [4]. Then remove "Karen Withrow" without using the index.
+Let's loop through the names to make sure they all got added correct:
+
+    System.out.println("----After Inital Add----");
+    for(String student : students) {
+      System.out.println(student);
+    }
+    
+When you run this, you should see all 5 names.
+
+Now add a few more names using the add method. Remove the name at [4]. Then remove "Karen Withrow" without using the index.  Check to see if the removals happened like you expected.
+
+    System.out.println("----After more adding and some removal----");
+    for(String student : students) {
+      System.out.println(student);
+    }
 
 ### HashMaps
 #### Why HashMaps?
@@ -47,16 +65,32 @@ HashMaps are created like this:
 Notice that the type of each element needs to be defined when you create the HashMap. The HashMap above will only hold pairs of Integers and Strings. However, you could make a new HashMap<Boolean, Integer> or HashMap<String, String>. The sky is the limit, as we shall see soon!
 
 Some common useful methods on HashMaps are:
+
 1. boolean students.put(1, "Temika Berthiaume")
-1. <value's type> students.get(key) so in this case: students.get(1)
-1. <value> students.remove(key)
-1. <old value> students.replace(key, newValue)
+1. &lt;Value's type&gt; [value] students.get(key) so in this case: students.get(1)
+1. &lt;Value's type&gt; [removed value] students.remove(key)
+1. &lt;Value's type&gt; [old value] students.replace(key, newValue)
 1. boolean students.containsKey(key)
 1. boolean students.containsValue(value)
 1. int students.size();
+2. 1. Set&lt;Value's type&gt; strings.values();
+1. Set&lt;Key's type&gt; string.keySet();
 
 #### HashMaps Practice
 Create a HashMap of your students, each with an incrementing ID number.
+Let's loop through your HashMap and output the student names. This is a bit more complicated.
+
+    System.out.println("----Student HashMap----");
+    for (String student : studentMap.values()) {
+      System.out.println(student);
+    }
+
+Java also supports a lot of the higher order functions you are used to but you won't see them as widely used as the format above.
+
+    System.out.println("----Student HashMap (foreach)----");
+    studentMap.values().forEach(student -> {
+      System.out.println(student);
+    });
 
 ### Classes
 ### Why classes?
